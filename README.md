@@ -1,3 +1,3 @@
-# Introction
+# Introduction
 <br />
-This is a folder where, as a beinner, I am puttin my HTML work for display.
+This is a folder where, as a beginner, I am putting my HTML work for display.
