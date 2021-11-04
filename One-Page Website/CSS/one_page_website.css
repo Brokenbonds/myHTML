@@ -81,9 +81,11 @@
     position: absolute;
     top:50%;
     left:50%;
+    padding: 10px 25px;
     transform: translate(-50%,-50%);
     color:white;
     background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
 .main__content{
     margin: auto;
@@ -159,8 +161,15 @@
 /* Photo Stuff */
 
 .Photo__Container{
-    width: 270px;
-    height: 520px;
+    width: 254px;
+    height: 504px;
+    margin: 10px;   
+    align-items: center;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
     
 }
 
