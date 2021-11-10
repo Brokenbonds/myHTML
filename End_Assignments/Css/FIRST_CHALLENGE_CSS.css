@@ -1,0 +1,179 @@
+/* text effects */
+
+p:hover{
+    color: white;
+}
+
+
+
+/* First Image with filter effects */
+.center:hover{
+    filter: blur(0px);
+
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(10px);
+    border-radius: 10px;
+    
+}
+
+/* Footer */
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table */
+
+table,th,td{
+    border: 1px solid white;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,th{
+    padding: 12px;
+}
+tr:nth-child(even){
+    background-color: rgb(229, 245, 250);
+}
+tr:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+th{
+    color: white;
+    background-color: rgb(0, 43, 100);
+}
+
+
+
+/* navbar */
+
+.Navbar{
+    overflow: hidden;
+    background-color: rgb(148, 148, 212);
+    position: fixed; /* sets the navbar to a fixed position */
+    top:0; /* makes the navabar stay at the top of the screen */
+    width:100%;
+    z-index: 1;
+}
+
+.Navbar a{
+    float:left  ;
+    display: block;
+    color: rgb(243, 245, 235);
+    text-align: center;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+.Navbar a:hover{
+    background-color: rgb(59, 59, 129);
+}
+
+
+/* Two column setup */
+
+*{
+    box-sizing: border-box;
+}   
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Fading an image */
+
+.Fadeing{
+    position: relative;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ImgToFade{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: blue;
+}
+
+.Fadeing:hover .overlay{
+    opacity: 1;
+}
+
+.Text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Video Elemnts */
+
+.Video{
+    background-color: blue;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    color: black;
+    position: relative;
+
+}
+
+.vidcenter{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+/* Second Image */
+
+.imgContainer{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.textContainer{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
