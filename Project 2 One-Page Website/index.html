@@ -7,6 +7,7 @@
     <title>Worlds of KleinerHai</title>
     <link rel="stylesheet" href="./CSS/one_page_website.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="./JS/OnePage.JS" defer></script>
 </head>
 <body>
     <!--Nav tools-->
@@ -33,24 +34,90 @@
         </div>
 
     </div>
-    <!-- Gallery-->
-    <div class= "Gallery" id="Gallery">
-        <h1>Gallery</h1>
-        <div class = "Gallery__Container">
-            <!--Photo Container 1-->
-            <div class=" Photo__Container">
-                <a href="https://www.artstation.com/artwork/rAEkzE" target="_blank"><img src ="images/Thumb/Image1.jpg"></a>
+    <!-- Lightbox-->
+    <div class="LightBox">
+        <h1 style="text-align:center">Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <img src="./images/Lightbox Images/Thumb 1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="Hide">
             </div>
-            <!--END Photo Container 1-->
 
-            <!--Photo Container 1-->
-            <div class=" Photo__Container">
-                <a href="https://www.artstation.com/artwork/rA28OJ" target="_blank"><img src ="images/Thumb/Image2.png" ></a>
+
+
+            <div class="column">
+                <img src="./images/Lightbox Images/Thumb 2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="Look Behind You">
             </div>
-            <!--END Photo Container 1-->
+
+
+
+            <div class="column">
+                <img src="./images/Lightbox Images/Thumb 3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="Dragon City">
+            </div>
+
+
+
+            <div class="column">
+                <img src="./images/Lightbox Images/Thumb 4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="Tall Knights">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1/4</div>
+                    <img src="images/Lightbox Images/kleinerhai-a 1.jpg" alt="Hide" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2/4</div>
+                    <img src="images/Lightbox Images/kleinerhai-b 2.jpg" alt="Look Behind You" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3/4</div>
+                    <img src="images/Lightbox Images/kleinerhai-kleinerhai-aa 3.jpg" alt="Dragon City" width="100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4/4</div>
+                    <img src="images/Lightbox Images/kleinerhai-kleinerhai-walkingb 4.jpg" alt="Tall Knights" width="100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <div>
+                    <a class="prev" onclick="plusSildes(-1)" >&#10094;</a>
+                    <a class="next" onclick="plusSildes(1)" >&#10095;</a>
+                </div>
+                
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo cursor" onclick="currentSlide(1)" src="./images/Lightbox Images/Thumb 1.jpg" alt="Hide">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" onclick="currentSlide(2)" src="./images/Lightbox Images/Thumb 2.jpg" alt="Look Behind You">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" onclick="currentSlide(3)" src="./images/Lightbox Images/Thumb 3.jpg" alt="Dragon City">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" onclick="currentSlide(4)" src="./images/Lightbox Images/Thumb 4.jpg" alt="Tall Knights">
+                
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Videos -->
+
     <div class="Video" id="Vids">
         <h1> Here&nbspis&nbspa&nbspvideo&nbspwhere&nbsphis&nbspart&nbspwas&nbspfeatured</h1><br>
         <div class= "Video___Container">
@@ -58,7 +125,8 @@
                 <iframe width="992" height="400" src="https://www.youtube.com/embed/j1rCOMlRZvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+    </div>  
+
     <!-- Form Comission Request-->
     <div class="Commissions" id="Request">
         <div>
@@ -80,9 +148,10 @@
     <!-- Footer -->
     <footer class= "footer">
         <div>
+            <br>
             <h1>This is was creatred by Phillip Boswell</h1><br>
             <h1>I had fun playing around with CSS</h1><br>
-            <h1>Hopefully this didn't take to much time</h1>
+            <h1>Hopefully this didn't take too much time</h1>
         </div>
     </footer>
 </body>
