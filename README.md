@@ -6,6 +6,11 @@ Assignment.html is the second HTML file I've created, this one was created to ho
 <br>
 ## First Protfolio Website<br>
 This is the very first website that I put up on philbosdev.com. It was my last assignment for the HTML module in the TechAcadamy Bootcamp. While not my vision, this was very important to the completion of my next module which taught JavaScript.
-
+<br>
+## Project 7 Boostrap4_project
+<br>
+In this project I made a mock website for a cinema that was made entirely from Bootstrap 4 and jQuery.
+<br>
 ## Project 10 Elementschallenge DOM
+<br>
 On this project, I had to look at the HTML DOM Document on W3school [here](https://www.w3schools.com/jsref/dom_obj_document.asp) and utilize one of the element properties/methods covered there. I choose to use the ```document.links.length``` element.
