@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEMENTS CHALLENGE</title>
+</head>
+<body>
+    <h1>Here is a list of links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=MOZT8DJD8rs&t=439s&ab_channel=TrentKaniuga">Trent Kaniuga Tutorial Part2</a></li>
+        <li><a href="https://www.youtube.com/watch?v=1hEECLG_ZWA&ab_channel=CollegeHumor">CollegeHumor Webster's Video</a></li>
+        <li><a href="https://www.youtube.com/watch?v=1o2Ysf0rMps&ab_channel=TrentKaniuga">Another Trent Tutorial</a></li>
+        <li><a href="https://www.youtube.com/watch?v=9cDPDxFDf_0&ab_channel=MovieGasm.com">Witcher 2 Trailer</a></li>
+        <li><a href="https://www.youtube.com/watch?v=y17RuWkWdn8&ab_channel=WebDevSimplified">14 techniques to manipulate the DOM</a></li>
+    </ul>
+
+    <button onclick="howManyLinks()">Click here</button>
+    <p>This is how many links there are on this page</p>
+    <p id="here"></p>
+    
+    <script>
+        function howManyLinks(){
+            var x = document.links.length;
+            document.getElementById("here").innerHTML = x;
+        }
+    </script>
+
+</body>
+</html>
