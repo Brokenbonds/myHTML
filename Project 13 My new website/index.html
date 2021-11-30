@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font awesome link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Google fonts link for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <!-- Style Sheet link-->
+    <link rel="stylesheet" href="./CSS/CascadeStyleSheet.css">
+    <!--JavaScript being defered to the end-->
+    <script src="./JS/main.js" defer></script>
+    <!-- Title-->
+    <title>Phillip Boswell</title>
+</head>
+<body> 
+    <script>
+        document.body.classList.add('fade-out');
+        console.log('fade out activated')
+    </script>
+
+    <div></div>
+
+    <!--Nav Bar-->
+    <div class="navBar">
+        
+            <a class="navText active" href="#heroic">Home</a>
+            <a class="navText" href="#about">About</a>
+            
+
+        <div class="CenterNav">
+            <a href="#gitHub" class="link"><i class="fab fa-github-alt"></i></a>
+        </div>
+        
+        <div class="RightNav">
+            <a class="navText" href="#contact">Contact&nbsp;Me</a>
+            <a href="https://www.linkedin.com/in/phillip-boswell-91829117a/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        
+    </div>
+
+    <!--Nav Bar ENDS-->
+
+    
+    <!--The Heroic Section-->
+    <div class="Heroic" id="heroic">
+        <div class="row ">
+
+            <div class="col ">
+                    <video class="HeroicVid" autoplay muted loop>
+                        <source src="./Imgs/video/Keyboard - 1046.mp4">
+                        Your browser doesn't support this video tag
+
+                    </video>
+                
+            </div>
+
+            <div class="col ">
+                <div class="HeroBgBox"></div>
+                <img class="profileMe" src="./Imgs/ME.jpg" alt="">
+                <p class="titleCard1">Phillip</p>
+                <p class="titleCard2">Boswell</p>
+                
+            </div>
+
+        </div>
+    </div>
+     <!--The Heroic Section ENDS-->
+
+    <!--About Me section-->
+    <div id="about">
+        <div class="row rowHeight About">
+            <h1 class="AboutTitle">About me</h1>
+        </div>
+        <div class="row">
+            <div class="col AboutC1 About ">
+
+                <img class="aboutImg" src="./Imgs/Me at work.jpg" alt="">
+                <div class="AboutBg"></div>
+                
+            </div>
+            <div class="col AboutC2 About contentControl">
+                <p>
+                    I am a game developer who loves to code! I'm a father of 1 and love hanging with my family.  When I'm not doing that or hanging with my friends playing DnD or creating MVPs with new and interesting gameplay and <br>genera combinations. 
+                    <br>
+                    <br>I am currently a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and C++. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+                <div class="AboutBg2"></div>
+            </div>
+        </div>
+    </div>
+    <!--About Me section ENDS-->
+
+    <!-- Git hub-->
+    <div id="gitHub">
+        <div class="row rowGitHub gitHubHide">
+            <div class="col GitHUB contentControl " >
+                <p>I also have a <a href="https://github.com/Brokenbonds">gitHub</a> accout where you can view my coding repositories.</p>
+                
+                <div class="gitBubble1"></div>
+                <div class="gitBubble2"></div>
+                <div class="gitBubble3"></div>
+
+                
+            </div>
+            <div class="col GitHUB">
+                <a href="https://github.com/Brokenbonds"><img style="position: relative; z-index: 3;" class="GitImage" src="./Imgs/GitHub2.png" alt="" ></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Contact section-->
+    <div class="row" id="contact">
+
+        <div class="col conCol">
+            <h1>Contact</h1>
+            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <div class="formContainer">
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here" style="height: 100px;">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+            <p class="center">Phillip Boswell <br> phillip.boswell@gmail.com <br> Student of <a href="https://www.learncodinganywhere.com/">The Tech Academy</a> </p>
+            <br>
+    </footer>
+</body>
+</html>
+
